@@ -1,0 +1,5 @@
+marks=int(input())
+if (marks>=40):
+	print("Pass\n")
+else:
+	print("Fail\n")
