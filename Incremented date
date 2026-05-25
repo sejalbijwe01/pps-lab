@@ -1,0 +1,20 @@
+# Type Content here...
+d=int(input())
+m=int(input())
+y=int(input())
+if(y%400==0)or(y%4==0 and y%100!=0):
+	feb=29
+else:
+	feb=28
+days=[31,feb,31,30,31,30,31,31,30,31,30,31]
+if m<1 or m>12 or d<1 or d>days[m-1]:
+	print("Invalid Date")
+else:
+	d +=1
+	if d>days[m-1]:
+		d=1
+		m +=1
+		if m>12:
+			m=1
+			y +=1
+	print(f"{d:02d}-{m:02d}-{y}")
