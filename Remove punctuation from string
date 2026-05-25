@@ -1,0 +1,8 @@
+# Type Content here...
+import string
+s=input()
+result=""
+for ch in s:
+	if ch not in string.punctuation:
+		result +=ch
+print(result)
