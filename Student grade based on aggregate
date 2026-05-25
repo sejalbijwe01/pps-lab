@@ -1,0 +1,16 @@
+# Write your code here...
+m1,m2,m3,m4=map(int,input().split())
+total=m1+m2+m3+m4
+print(total)
+avg=total/4
+print(f"{avg:.2f}")
+if avg>=75.00:
+	print("Distinction")
+elif avg>=60.00:
+	print("First Division")
+elif avg>=50.00:
+	print("Second Division")
+elif avg>=40.00:
+	print("Third Division")
+else:
+	print("Fail")
