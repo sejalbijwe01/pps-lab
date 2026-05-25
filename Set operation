@@ -1,0 +1,6 @@
+# Type Content here...
+A = set(map(int, input("Set A: ").split()))
+B = set(map(int, input("Set B: ").split()))
+print("Union:",A.union(B))
+print("Intersection:",A.intersection(B))
+print("Difference:",A.difference(B))
